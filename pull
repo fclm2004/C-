@@ -1,0 +1,10 @@
+cpp
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+    std::string branchName = "feature/new_feature"; // specify the branch name for the pull request
+    std::string repositoryURL = "https://github.com/your_username/your_repository.git";  // specify your repository URL
+
+    // Create a command string to execute the pull request
+    std::string command = "git pull-request" + branchName + " " + repositoryURL;
