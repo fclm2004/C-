@@ -1,0 +1,12 @@
+ // Execute the command using system function
+    int result = system(command.c_str());
+
+    if (result == 0) {
+        std::cout << "Pull request created successfully!";
+    }
+    else {
+        std::cout << "Failed to create pull request.";
+    }
+
+    return 0;
+}
