@@ -1,0 +1,9 @@
+function addLiquidity(uint amountA, uint amountB) external {
+        // Transfer tokens from the sender to the contract
+        // assuming both tokenA and tokenB follow ERC20 standard
+        // ... (transferFrom function)
+        
+        // Calculate and update the reserves
+        reserveA += amountA;
+        reserveB += amountB;
+    }
