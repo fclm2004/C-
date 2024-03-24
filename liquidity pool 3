@@ -1,0 +1,20 @@
+ function removeLiquidity(uint liquidity) external {
+        require(liquidity > 0, "Liquidity should be greater than 0");
+        
+        // Calculate the proportion of reserves to be removed
+        uint amountA = (liquidity * reserveA) / (reserveA + reserveB);
+        uint amountB = (liquidity * reserveB) / (reserveA + reserveB);
+        
+        // Transfer the proportions of tokens back to the sender
+        // assuming both tokenA and tokenB follow ERC20 standard
+        // ... (transfer function)
+        
+        // Update the reserves after removing liquidity
+        reserveA -= amountA;
+        reserveB -= amountB;
+    }
+    
+    function getReserves() external view returns (uint, uint) {
+        return (reserveA, reserveB);
+    }
+}
