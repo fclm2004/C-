@@ -1,0 +1,15 @@
+lass Blockchain {
+    private List<Block> chain;
+
+    public Blockchain() {
+        chain = new ArrayList<>();
+        chain.add(generateGenesisBlock());
+    }
+
+    private Block generateGenesisBlock() {
+        return new Block(0, new Date(), "0", "Genesis Block");
+    }
+
+    public Block getLatestBlock() {
+        return chain.get(chain.size() - 1);
+    }щ
