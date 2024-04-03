@@ -1,0 +1,11 @@
+return hexString.toString();
+} catch (NoSuchAlgorithmException e) {
+e.printStackTrace();
+}
+return null;
+}
+
+public String getHash() {
+return hash;
+}
+}
