@@ -1,0 +1,7 @@
+class Blockchain {
+private List<Block> chain;
+
+public Blockchain() {
+chain = new ArrayList<>();
+chain.add(generateGenesisBlock());
+}
