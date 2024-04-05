@@ -1,0 +1,8 @@
+
+private Block generateGenesisBlock() {
+return new Block(0, new Date(), "0", "Genesis Block");
+}
+
+public Block getLatestBlock() {
+return chain.get(chain.size() - 1);
+}
