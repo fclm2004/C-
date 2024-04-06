@@ -1,0 +1,5 @@
+public void addBlock(Block newBlock) {
+if (isValidNewBlock(newBlock)) {
+chain.add(newBlock);
+}
+}
