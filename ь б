@@ -1,0 +1,10 @@
+public boolean isValidNewBlock(Block newBlock) {
+Block previousBlock = getLatestBlock();
+if (newBlock.getIndex() != previousBlock.getIndex() + 1) {
+return false;
+}
+if (!newBlock.getPreviousHash().equals(previousBlock.getHash())) {
+return false;
+}
+return true;
+}
