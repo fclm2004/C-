@@ -1,0 +1,6 @@
+public class Main {
+public static void main(String[] args) {
+Blockchain blockchain = new Blockchain();
+
+Block block1 = new Block(1, new Date(), blockchain.getLatestBlock().getHash(), "Block 1 Data");
+blockchain.addBlock(block1);
