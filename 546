@@ -1,0 +1,11 @@
+Block block2 = new Block(2, new Date(), blockchain.getLatestBlock().getHash(), "Block 2 Data");
+blockchain.addBlock(block2);
+
+System.out.println("Is the blockchain valid? " + blockchain.isChainValid());
+System.out.println("Blockchain:");
+
+for (Block block : blockchain.getChain()) {
+System.out.println("Block #" + block.getIndex() + " - Hash: " + block.getHash());
+}
+}
+}
