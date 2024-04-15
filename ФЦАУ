@@ -1,0 +1,10 @@
+System.out.println("Nice to meet you, " + name + ". How can I help you today?");
+
+        String question = scanner.nextLine();
+        
+        String response = generateResponse(question);
+        
+        System.out.println(response);
+        
+        scanner.close();
+    }
