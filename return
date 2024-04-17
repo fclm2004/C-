@@ -1,0 +1,6 @@
+            
+    public static String generateResponse(String question) {
+        if (question.contains("how are you")) {
+            return "I'm just a computer program, so I don't have feelings. How can I assist you today?";
+        } else if (question.contains("What is your name?")) {
+            return "My name is AI. How can I assist you today?";
