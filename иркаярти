@@ -1,0 +1,7 @@
+import java.util.HashMap;
+public class ArtificialIntelligence {
+    private HashMap&lt;String, String&gt; information;
+    public ArtificialIntelligence() {
+        information = new HashMap&lt;&gt;();
+        information.put("name", "John Doe");
+        information.put("age", "30");
