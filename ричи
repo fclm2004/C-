@@ -1,0 +1,5 @@
+    public static void main(String[] args) {
+        ArtificialIntelligence ai = new ArtificialIntelligence();
+        String key = "occupation";
+        String result = ai.searchInformation(key);
+        if(result != null) {
